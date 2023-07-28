@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "packageManager": "pnpm@8.6.3",
+  "dependencies": {
+    "@ndn/autoconfig": "https://ndnts-nightly.ndn.today/autoconfig.tgz",
+    "@ndn/endpoint": "https://ndnts-nightly.ndn.today/endpoint.tgz",
+    "@ndn/packet": "https://ndnts-nightly.ndn.today/packet.tgz",
+    "@ndn/util": "https://ndnts-nightly.ndn.today/util.tgz",
+    "@ndn/ws-transport": "https://ndnts-nightly.ndn.today/ws-transport.tgz",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack serve"
+  }
+}

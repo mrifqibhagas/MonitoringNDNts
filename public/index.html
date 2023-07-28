@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NDNts Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+</head>
+<body>
+  <h1>NDNts Website</h1>
+  <form id="app_form">
+    <fieldset>
+      <legend>Send Request Check Patient Data</legend>
+      <label>
+        Prefix Name
+        <input id="app_prefix" type="text">
+        <input id="app_param" type="text">
+      </label>
+      <input id="app_button" type="submit" value="check" />
+    </fieldset>
+  </form>
+  <pre id="output_json"></pre>
+  <script src="bundle.js"></script>
+</body>
+</html>

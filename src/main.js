@@ -11,7 +11,7 @@ async function ping(evt) {
   $button.disabled = true;
 
   // Construct the name prefix <user-input>+/ping
-  const prefix = new Name(document.querySelector("#app_prefix").value);
+  const prefix = new Name("data/getuser");
   const app = document.querySelector("#app_param").value;
   const $log = document.querySelector("#app_log");
   //$log.textContent = `Check Data \n${AltUri.ofName(prefix)}\n`;

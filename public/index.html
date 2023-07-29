@@ -9,17 +9,21 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     body {
-      background: linear-gradient(180deg, #03265B 0%, rgba(41, 118, 235, 0) 100%) no-repeat;
+      height: 800px;
+      background: linear-gradient(180deg, #03265B 0%, rgba(41, 118, 235, 0) 120%) no-repeat;
     }
 
   </style>
 </head>
 <body>
-  <div class="w3-container">
-    <form class="w3-card-8 w3-center" id="app_form" style="padding: 50px;background-color: aliceblue; border-radius: 20px;"> 
+  <div style="height: 20px; opacity: 0%;">
+    ini adalah halaman transparan, gausah dihiraukan
+  </div>
+  <div class="w3-container" style="top: 50px;">
+    <form class="w3-card-8 w3-center" id="app_form" style="padding:50px;background-color: aliceblue; border-radius: 20px; top:100px;"> 
       <h2 class="w3-center">Nama Pasien</h2>
       <br>
-      <input type="text" class="w3-center" id="app_param" placeholder="Masukkan Nama"></input>
+      <input type="text" class="w3-center w3-" id="app_param" placeholder="Masukkan Nama" style="align-content: center; width: 100%;"/>
       <br>
       <button type="submit" class="w3-btn w3-blue w3-center" id="app_button" data-toggle="modal" data-target="#myModal">submit</button>
     </form>

@@ -5,21 +5,53 @@
   <title>NDNts Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
-  <h1>NDNts Website</h1>
-  <form id="app_form">
-    <fieldset>
-      <legend>Send Request Check Patient Data</legend>
-      <label>
-        Isi Nama Pasien
-        <input id="app_param" type="text">
-      </label>
-      <input id="app_button" type="submit" value="check" />
-    </fieldset>
-  </form>
-  <pre id="output_json"></pre>
+<body style = "
+Left
+:
+Linear Gradient
+rgba(3, 38, 91, 1)
+rgba(41, 118, 235, 0);
+/* Rectangle 43 */
+
+top: 0px;
+
+background: linear-gradient(180deg, #03265B 0%, rgba(41, 118, 235, 0) 100%) no-repeat;">
+    <div class="w3-container">
+      <form class="w3-card-8 w3-center" id="app_form" style="padding: 50px;background-color: aliceblue; border-radius: 20px;"> 
+        <h2 class="w3-center">Nama Pasien</h2>
+        <br>
+        <input type="text" class="w3-center" id="app_param" placeholder="Masukkan Nama" style="display: inline-block; padding-bottom: 50px;"></input>
+        <br>
+        <button type="submit" class="w3-btn w3-blue w3-center" id="app_button" data-toggle="modal" data-target="#myModal">submit</button>
+      </form>
+    </div>
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Biodata Pasien</h4>
+        </div>
+        <div class="modal-body">
+          <pre id="output_json">
+
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="bundle.js"></script>
 </body>
 </html>

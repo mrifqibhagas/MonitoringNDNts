@@ -8,7 +8,7 @@ async function ping(evt) {
   const $button = document.querySelector("#app_button");
   $button.disabled = true;
 
-  const prefix = new Name("data/getuser");
+  const prefix = new Name("/data/getuser");
   const app = document.querySelector("#app_param").value;
   const $log = document.querySelector("#app_log");
 

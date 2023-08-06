@@ -31,7 +31,7 @@ async function ping(evt) {
     const dataContent = data.content;
     
     console.log(dataContent);
-    console.log('${rtt} ms');
+    console.log(`${rtt} ms`);
     //Parse JSON and Stringfy
     const jsonData = JSON.parse(decoder.decode(dataContent));
     //Access the First Object inside JSON array

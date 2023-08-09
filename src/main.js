@@ -19,7 +19,7 @@ async function ping(evt) {
   
   interest.name = prefix;
   interest.mustBeFresh = true; 
-  interest.lifetime = 1000;
+  interest.lifetime = 5000;
   interest.appParameters = encoder.encode(app);
   const t0 = Date.now();
   await interest.updateParamsDigest();

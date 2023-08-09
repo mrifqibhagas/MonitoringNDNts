@@ -1,5 +1,5 @@
 import { Endpoint } from "@ndn/endpoint";
-import { AltUri, Interest, Name } from "@ndn/packet";
+import { Interest, Name } from "@ndn/packet";
 import { WsTransport } from "@ndn/ws-transport";
 
 async function ping(evt) {
